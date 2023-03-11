@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(89, 135, 120);
+    padding: 0 1em 1em;
+}
+
+.main{
+    max-width: 50%;
+    margin: 20px auto;
+}
+.accordion{
+    border: 1px solid red;
+    cursor: pointer;
+    margin-bottom: 0.25em;
+}
+
+.accordion__title{
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.accordion__title:hover{
+    background-color: red;
+    transition: background .2s ease-out;
+}
+.accordion__input{
+appearance: none;
+-webkit-appearance: none;
+position: absolute;
+width: 0;
+height: 0;
+}
+
+.accordion__input:checked ~ .accordion__title{
+    background-color: aquamarine;
+}
+
+.accordion__input:checked ~ .accordion__image{
+    display: block;
+}
+
+.accordion__image{
+    display: none;
+}
+
+.mem:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+ 
+  .icon{
+    margin-left: 800px;
+    
+  }
